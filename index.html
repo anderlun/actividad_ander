@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha tecnica</title>
+    <link rel="stylesheet" href="css/ficha.css">
+    <script src="js/ficha.js"></script>
+</head>
+<body>
+
+    <h1>Formato de ficha tecnica</h1>
+    <h3>sistema para llevar el control del supermercado</h3>
+
+    <p>
+        <h4>HARDWARE</h4>
+        <b> nombre del producto </b>
+        <input type="text"id="nombreProducto" placeholder="Nombre del producto">
+        <br>
+        <br>
+
+        <b> Linea de produccion</b>
+        <input type="text"id="linea" placeholder="Linea de produccion">
+        <br>
+        <br>
+
+        <label for="cantidad">
+        <b>cantidad de equipos POST</b>
+        <input type="number"id="cantidad" placeholder="cantidad de equipos"> </label>
+        <br>
+        <br>
+
+        <b>VALOR:</b>
+        <input type="number"id="valor" placeholder="versiones anteriores"> 
+    </p>
+    <br><br>
+
+    <P>
+        <h4>SOFTWARE</h4>
+    </P>
+    <br><br><br>
+    <button onclick="verFicha()">enviar ficha tecnica</button>
+    <p id="total"> </p>
+</body>
+</html>
