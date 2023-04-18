@@ -4,43 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha tecnica</title>
-    <link rel="stylesheet" href="css/ficha.css">
-    <script src="js/ficha.js"></script>
+    <title>FICHA TECNICA </title>
+    <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js"></script>
 </head>
 <body>
+    <h1>FICHA TECNICA</h1>
+    <form action="">
+    <table>
+        <tr>
+            <th colspan="2"> SUPERMERCADO "EL VECINO"</th>
+            <th colspan="3">
+                <img src="img/logo.PNG" style="width: 100;height: 100;">
+            </th>
+        </tr>
+        <tr>
+            <th rowspan="6">Caracteriticas del producto <br><br>(HARDWARE)</th>
+        </tr><td>Computadoras para el punto de venta y para el servidor</td>  <td colspan="3">
+            <input type="number" id="cantidad_0" placeholder="cantidad">
+            <input type="number" id="valor_0" placeholder="valor">
+        </td>
+        </tr>
+            <tr><td>Dispositivos móviles para acceso remoto</td> <td colspan="3">
+                <input type="number" id="cantidad_1" placeholder="cantidad">
+                <input type="number" id="valor_1" placeholder="valor">
 
-    <h1>Formato de ficha tecnica</h1>
-    <h3>sistema para llevar el control del supermercado</h3>
+            <tr><td>Impresora de códigos de barras</td> <td colspan="3">
+                <input type="number" id="cantidad_2" placeholder="cantidad">
+                <input type="number" id="valor_2" placeholder="valor">
 
-    <p>
-        <h4>HARDWARE</h4>
-        <b> nombre del producto </b>
-        <input type="text"id="nombreProducto" placeholder="Nombre del producto">
-        <br>
-        <br>
+            <tr><td>Lectores de código de barras</td> <td colspan="3">
+                <input type="number" id="cantidad_3" placeholder="cantidad">
+                <input type="number" id="valor_3" placeholder="valor">
 
-        <b> Linea de produccion</b>
-        <input type="text"id="linea" placeholder="Linea de produccion">
-        <br>
-        <br>
+            <tr><td>Cajas registradoras </td> <td colspan="3">
+                <input type="number" id="cantidad_4" placeholder="cantidad">
+                <input type="number" id="valor_4" placeholder="valor">
+        
+            <tr><th> VALOR TOTAL HARDWARE </th> <td colspan="4">
+                <p id="total_hardware"></p> 
+            </td></tr>
+                
+                
+            <th rowspan="6">Caracteriticas del producto <br><br>(SOFTWARE)</th>
+            </tr><td>Sistemas operativos</td>  <td colspan="3">
+                <input type="number" id="cantidad_5" placeholder="cantidad">
+                <input type="number" id="valor_5" placeholder="valor">
+            </td>
+            </tr>
+                <tr><td>Software de gestión de bases de datos </td> <td colspan="3">
+                    <input type="number" id="cantidad_6" placeholder="cantidad">
+                    <input type="number" id="valor_6" placeholder="valor">
+    
+                <tr><td>servidores</td> <td colspan="3">
+                    <input type="number" id="cantidad_7" placeholder="cantidad">
+                    <input type="number" id="valor_7" placeholder="valor">
+    
+                <tr><td>Herramientas de desarrollo de softwares</td> <td colspan="3">
+                    <input type="number" id="cantidad_8" placeholder="cantidad">
+                    <input type="number" id="valor_8" placeholder="valor">
+    
+                <tr>
+                    <td>Software de seguridad  </td> <td colspan="3">
+                        <input type="number" id="cantidad_9" placeholder="cantidad">
+                        <input type="number" id="valor_9" placeholder="valor">
+                        <tr><th> VALOR TOTAL SOFTWARE </th> <td colspan="4">
+                        <p id="total_software"></p> 
+                        
 
-        <label for="cantidad">
-        <b>cantidad de equipos POST</b>
-        <input type="number"id="cantidad" placeholder="cantidad de equipos"> </label>
-        <br>
-        <br>
+                    </td>
+                </tr>      
+    </tr>
+   
+   
+    </table>
+    <br>
+    <table>
+        <tr><th colspan="4">Historia de modificaciones</th></tr>
+        <tr><td>Version</td> <td>Naturaleza del cambio</td> <td>Fecha de aprobacion</td> <td>Fecha validacion</td></tr>
+        <tr><td>00</td> <td><input type="text"></td> <td><input type="text"></td>  <td><input type="text"></td> </tr>
+    </table>
+    <br>
+    <table>
+        <tr><th colspan="3">Firmas</th></tr>
+        <tr><td>Elaborado por </td> <td>Aprobo</td> <td>Valido</td> </tr>
+        <tr><td>Anderson Luna Muñoz</td> <td><input type="text"></td> <td><input type="text"></td>   </tr>
+    </table>
+</form>
+<br>
+<button onclick="verFicha()"><b>Enviar Ficha Tecnica</b></button>
 
-        <b>VALOR:</b>
-        <input type="number"id="valor" placeholder="versiones anteriores"> 
-    </p>
-    <br><br>
-
-    <P>
-        <h4>SOFTWARE</h4>
-    </P>
-    <br><br><br>
-    <button onclick="verFicha()">enviar ficha tecnica</button>
-    <p id="total"> </p>
 </body>
 </html>
